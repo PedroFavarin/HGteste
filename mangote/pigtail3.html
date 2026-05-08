@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pig Tail P-45 7/16 NPT (M) X 7/8 Rosca Esquerda Multigás | HGconex</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+</head>
+<body id="topo">
+
+
+    <div id="header"></div>
+
+<!-- BANNER -->
+<section class="banner-interno">
+    <div class="banner-overlay">
+        <h1>Pig Tail P-45 7/16 NPT (M) X 7/8 Rosca Esquerda Multigás</h1>
+        <p>Mangote para central de gás P-45 roscas externas</p>
+    </div>
+</section>
+
+<!-- PRODUTO -->
+<section class="pagina-produtos">
+    <div class="produto-individual">
+
+        <!-- IMAGEM -->
+        <div class="produto-img">
+            <img src="../imagens/mangote3.png" alt="Pig Tail P-45 7/16 NPT (M) X 7/8 Rosca Esquerda Multigás">
+        </div>
+
+        <!-- INFO -->
+        <div class="produto-info">
+            <h2>Pig Tail P-45 7/16 NPT (M) X 7/8 Rosca Esquerda Multigás</h2>
+
+            <p>Mangote com roscas externas para central do gás P-45 multigás.</p>
+
+            <h3>Tamanhos</h3>
+           <ul>
+                <li>50cm</li>
+                <LI>80cm</LI>
+                <li>1 Metro</li>
+            </ul>
+
+        </div>
+
+    </div>
+</section>
+<div id="contato-area"></div>
+
+    <div id="footer"></div>
+
+<script>
+    fetch("../contato.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("contato-area").innerHTML = data;
+    });
+
+    fetch("../footer.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("footer").innerHTML = data;
+    });
+
+    fetch("../header.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("header").innerHTML = data;
+    });
+</script>
+
+
+</body>
+</html>

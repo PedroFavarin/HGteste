@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regulador Pressão Estágio Único | HGconex</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+</head>
+<body id="topo">
+
+
+    <div id="header"></div>
+
+<!-- BANNER -->
+<section class="banner-interno">
+    <div class="banner-overlay">
+        <h1>Regulador Pressão Estágio Único</h1>
+        <p>Controle eficiente da pressão para o sistema</p>
+    </div>
+</section>
+
+<!-- PRODUTOS -->
+<section class="pagina-produtos">
+    <div class="grid-produtos">
+
+        <!-- CARD 1 -->
+        <div class="card-produto">
+            <img src="../imagens/regulador-unico-1.webp" alt="Regulador Estágio Único de 5kg/h">
+            <h3>Regulador Estágio Único de 5kg/h</h3>
+            <p>Regulador estágio único de 5kg/h.</p>
+            <a href="regulador1.html" target="_self">Saiba mais</a>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="card-produto">
+            <img src="../imagens/regulador-unico-2.webp" alt="Regulador Estágio Único de 7kg/h">
+            <h3>Regulador Estágio Único de 7kg/h</h3>
+            <p>Regulador estágio único de 7kg/h.</p>
+            <a href="regulador2.html" target="_self">Saiba mais</a>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="card-produto">
+            <img src="../imagens/regulador-unico-3.png" alt="Regulador Estágio Único de 12kg/h">
+            <h3>Regulador Estágio Único de 12kg/h </h3>
+            <p>Regulador estágio único de 12kg/h.</p>
+            <a href="regulador3.html" target="_self">Saiba mais</a>
+        </div>
+
+         <!-- CARD 4 -->
+        <div class="card-produto">
+            <img src="../imagens/regulador-unico-4.webp" alt="Regulador BP 2202 GN">
+            <h3>Regulador BP2202 GN</h3>
+            <p>Regulador BP2202 para gás natural.</p>
+            <a href="regulador4.html" target="_self">Saiba mais</a>
+        </div>
+
+        <!-- CARD 5 -->
+        <div class="card-produto">
+            <img src="../imagens/regulador-unico-5.webp" alt="Regulador BP 2202 GLP">
+            <h3>Regulador BP2202 GLP</h3>
+            <p>Regulador para GLP BP2202.</p>
+            <a href="regulador5.html" target="_self">Saiba mais</a>
+        </div>
+    </div>
+</section>
+
+    <div id="contato-area"></div>
+
+    <div id="footer"></div>
+
+<script>
+    fetch("../contato.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("contato-area").innerHTML = data;
+    });
+
+    fetch("../footer.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("footer").innerHTML = data;
+    });
+
+     fetch("../header.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("header").innerHTML = data;
+    });
+</script>
+
+</body>
+</html>

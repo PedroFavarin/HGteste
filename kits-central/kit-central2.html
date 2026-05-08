@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kit Instalação de 2 P-45 Aliança 12kg/h | HGconex</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+</head>
+<body id="topo">
+
+<div id="header"></div>
+
+<!-- BANNER -->
+<section class="banner-interno">
+    <div class="banner-overlay">
+        <h1>Kit Instalação de 2 P-45 Aliança 12kg/h</h1>
+        <p>Kit instalação de 2 P-45 para central do gás com regulador Aliança</p>
+    </div>
+</section>
+
+<!-- PRODUTO -->
+<section class="pagina-produtos">
+    <div class="produto-individual">
+
+        <!-- IMAGEM -->
+        <div class="produto-img">
+            <img src="../imagens/kit-central2.jpg" alt="Kit Instalação de 2 P-45 Aliança 12kg/h">
+        </div>
+
+        <!-- INFO -->
+        <div class="produto-info">
+            <h2>Kit Instalação de 2 P-45 Aliança 12kg/h</h2>
+
+            <p>Kit instalação de 2 P-45 para central do gás com regulador Aliança.</p>
+            
+            <h3>Produtos:</h3>
+
+            <ul>
+                <li>1 Regulador 12kg/h Alinça.</li>
+                <li>1 Tê de Latão.</li>
+                <li>2 Válvulas de Retenção.</li>
+                <li>2 Pig Tail de 1m ou 50cm Multigás ou Ultragás.</li>
+            </ul>
+
+        </div>
+
+    </div>
+</section>
+<div id="contato-area"></div>
+
+    <div id="footer"></div>
+
+<script>
+    fetch("../contato.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("contato-area").innerHTML = data;
+    });
+
+    fetch("../footer.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("footer").innerHTML = data;
+    });
+
+    fetch("../header.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("header").innerHTML = data;
+    });
+</script>
+
+
+</body>
+</html>

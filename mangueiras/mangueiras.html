@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mangueiras Flexível | HGconex</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+</head>
+<body id="topo">
+
+
+    <div id="header"></div>
+
+<!-- BANNER -->
+<section class="banner-interno">
+    <div class="banner-overlay">
+        <h1>Mangueiras Flexível</h1>
+        <p>Escolha o modelo ideal para sua instalação</p>
+    </div>
+</section>
+
+<!-- PRODUTOS -->
+<section class="pagina-produtos">
+    <div class="grid-produtos">
+
+        <!-- CARD 1 -->
+        <div class="card-produto">
+            <img src="../imagens/mangueira-flexivel1.jpg" alt="Mangueira Flexivel">
+            <h3>Mangueira Flexível</h3>
+            <p>Flexibilidade e segurança para diversas aplicações.</p>
+            <a href="../mangueira-flexivel/produto-mangueira-flexivel.html" target="_self">Saiba mais</a>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="card-produto">
+            <img src="../imagens/mangueira-plastica.jpeg" alt="Mangueira Malha Aço Flexível Bico X Ponta Fêmea">
+            <h3>Mangueiras Plásticas</h3>
+            <p>Opção leve e funcional para instalações específicas.</p>
+            <a href="../mangueira-plastica/produto-mangueira-plastica.html" target="_self">Saiba mais</a>
+        </div>
+        
+    </div>
+</section>
+
+    <div id="contato-area"></div>
+
+    <div id="footer"></div>
+
+<script>
+    fetch("../contato.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("contato-area").innerHTML = data;
+    });
+
+    fetch("../footer.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("footer").innerHTML = data;
+    });
+
+     fetch("../header.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("header").innerHTML = data;
+    });
+</script>
+
+</body>
+</html>

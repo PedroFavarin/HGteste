@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Válvulas Cromadas | HGconex</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+</head>
+<body id="topo">
+
+
+    <div id="header"></div>
+
+<!-- BANNER -->
+<section class="banner-interno">
+    <div class="banner-overlay">
+        <h1>Válvulas Cromadas</h1>
+        <p>Acabamento e funcionalidade para instalações</p>
+    </div>
+</section>
+
+<!-- PRODUTOS -->
+<section class="pagina-produtos">
+    <div class="grid-produtos">
+
+        <!-- CARD 1 -->
+        <div class="card-produto">
+            <img src="../imagens/valvula1.jpg" alt="Válvula Cromada Macho (M) X Fêmea (F) Reta">
+            <h3>Válvula Cromada Macho (M) X Fêmea (F) Reta</h3>
+            <p>Válvula cromada abre e fecha rosqueável borboleta.</p>
+            <a href="valvula1.html" target="_self">Saiba mais</a>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="card-produto">
+            <img src="../imagens/valvula2.webp " alt="Válvula Cromada Angular Macho (M) X Fêmea (F)">
+            <h3>Válvula Cromada Angular Macho (M) X Fêmea (F)</h3>
+            <p>Válvula cromada abre e fecha angular borboleta.</p>
+            <a href="valvula2.html" target="_self">Saiba mais</a>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="card-produto">
+            <img src="../imagens/valvula3.jpg" alt="Válvula Cromada Reta Macho (M) X Bico (BM)">
+            <h3>Válvula Cromada Reta Macho (M) X Bico (BM)</h3>
+            <p>Válvula cromada abre e fecha com saída para mangueira.</p>
+            <a href="valvula3.html" target="_self">Saiba mais</a>
+        </div>
+
+         <!-- CARD 4 -->
+        <div class="card-produto">
+            <img src="../imagens/valvula4.jpg" alt="Válvula Cromada Angular Macho (M) X Bico (BM)">
+            <h3>Válvula Cromada Angular Macho (M) X Bico (BM)</h3>
+            <p>Válvula cromada angular abre e fecha com saída bico.</p>
+            <a href="valvula4.html" target="_self">Saiba mais</a>
+        </div>
+
+          <!-- CARD 5 -->
+        <div class="card-produto">
+            <img src="../imagens/valvula5.jpg" alt="Válvula Cromada Reta Fêmea (F) X Fêmea (F)">
+            <h3>Válvula Cromada Reta Fêmea (F) X Fêmea (F)</h3>
+            <p>Válvula abre e fecha reta com manopla alavanca.</p>
+            <a href="valvula5.html" target="_self">Saiba mais</a>
+        </div>
+
+          <!-- CARD 6 -->
+        <div class="card-produto">
+            <img src="../imagens/valvula6.jpg" alt="Válvula Cromada Angular Macho (M) X Macho (M)">
+            <h3>Válvula Cromada Angular Macho (M) X Macho (M)</h3>
+            <p>Válvula cromada angular com roscas externas.</p>
+            <a href="valvula6.html" target="_self">Saiba mais</a>
+        </div>
+
+    </div>
+</section>
+
+    <div id="contato-area"></div>
+
+    <div id="footer"></div>
+
+<script>
+    fetch("../contato.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("contato-area").innerHTML = data;
+    });
+
+    fetch("../footer.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("footer").innerHTML = data;
+    });
+
+     fetch("../header.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("header").innerHTML = data;
+    });
+</script>
+
+</body>
+</html>

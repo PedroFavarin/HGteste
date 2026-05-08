@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abraçadeira Cunha | HGconex</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+</head>
+<body id="topo">
+
+<div id="header"></div>
+
+<!-- BANNER -->
+<section class="banner-interno">
+    <div class="banner-overlay">
+        <h1>Abraçadeira Tipo D com Cunha</h1>
+        <p>Abraçadeira para mangueiras de gás</p>
+    </div>
+</section>
+
+<!-- PRODUTO -->
+<section class="pagina-produtos">
+    <div class="produto-individual">
+
+        <!-- IMAGEM -->
+        <div class="produto-img">
+            <img src="../imagens/180_abracadeira_tipo_d_com_cunha_2_reforcada_99461_1_9373fee82c093274b6af79c33b9a04e6.webp" alt="Abraçadeira Cunha">
+        </div>
+
+        <!-- INFO -->
+        <div class="produto-info">
+            <h2>Abraçadeira tipo D com cunha</h2>
+
+            <p>
+                Fabricado em Aço Carbono com acabamento zincado, é utilizada na instalação
+                de tubulação aparente com a tubulação fixada através de uma cunha.
+            </p>
+
+            <h3>Tamanhos</h3>
+            <ul>
+                <li>1/2 x 3/4</li>
+            </ul>
+
+        </div>
+
+    </div>
+</section>
+
+    <div id="contato-area"></div>
+
+    <div id="footer"></div>
+
+<script>
+    fetch("../contato.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("contato-area").innerHTML = data;
+    });
+
+    fetch("../footer.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("footer").innerHTML = data;
+    });
+
+    fetch("../header.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("header").innerHTML = data;
+    });
+</script>
+
+</body>
+</html>

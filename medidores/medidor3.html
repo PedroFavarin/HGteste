@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medidor p/ Gás GN/GLP G1.6 | HGconex</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+</head>
+<body id="topo">
+
+<div id="header"></div>
+
+<!-- BANNER -->
+<section class="banner-interno">
+    <div class="banner-overlay">
+        <h1>Medidor p/ Gás GN/GLP G1.6</h1>
+        <p>Medidor para consumo do gás</p>
+    </div>
+</section>
+
+<!-- PRODUTO -->
+<section class="pagina-produtos">
+    <div class="produto-individual">
+
+        <!-- IMAGEM -->
+        <div class="produto-img">
+            <img src="../imagens/medidor3.jpg" alt="Medidor p/ Gás GN/GLP G1.6">
+        </div>
+
+        <!-- INFO -->
+        <div class="produto-info">
+            <h2>Medidor p/ Gás GN/GLP G1.6</h2>
+
+            <p>Os medidores de gás volumétricos são aptos para a medição de consumo residencial de gás natural e GLP.</p>
+
+            <p>Com entrada e saída de rosca 3/4 e contendo a pressão máxima de 50kpa.</p>
+
+        </div>
+
+    </div>
+</section>
+<div id="contato-area"></div>
+
+    <div id="footer"></div>
+
+<script>
+    fetch("../contato.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("contato-area").innerHTML = data;
+    });
+
+    fetch("../footer.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("footer").innerHTML = data;
+    });
+
+    fetch("../header.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("header").innerHTML = data;
+    });
+</script>
+
+
+</body>
+</html>

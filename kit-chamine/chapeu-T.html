@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapéu Tê Ventilante | HGconex</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+</head>
+<body id="topo">
+
+<div id="header"></div>
+
+<!-- BANNER -->
+<section class="banner-interno">
+    <div class="banner-overlay">
+        <h1>Chapéu Tê Ventilante</h1>
+        <p>Chapéu ventilante para aquecedor</p>
+    </div>
+</section>
+
+<!-- PRODUTO -->
+<section class="pagina-produtos">
+    <div class="produto-individual">
+
+        <!-- IMAGEM -->
+        <div class="produto-img">
+            <img src="../imagens/te-chamine.jpg" alt="Chapéu Tê Ventilante">
+        </div>
+
+        <!-- INFO -->
+        <div class="produto-info">
+            <h2>Chapéu Tê Ventilante</h2>
+
+            <p>Fabricado 100% em alumínio o que faz com que o produto tenha uma vida útil extremamente longa. É incombustível e resistente à corrosão.</p>
+            
+            <p>Amplamente utilizado nas fachadas das edificações como terminal de chaminé de aquecedores a gás e coifas.</p>
+
+            <p>Fabricado conforme normativa NBR 13103.</p>
+
+        </div>
+
+    </div>
+</section>
+<div id="contato-area"></div>
+
+    <div id="footer"></div>
+
+<script>
+    fetch("../contato.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("contato-area").innerHTML = data;
+    });
+
+    fetch("../footer.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("footer").innerHTML = data;
+    });
+
+    fetch("../header.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("header").innerHTML = data;
+    });
+</script>
+
+
+</body>
+</html>

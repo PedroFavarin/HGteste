@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotovelo Fêmea NPT (F) x Prensar | HGconex</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+</head>
+<body id="topo">
+
+<!-- HEADER -->
+<header class="topo">
+    <div class="logo-area">
+        <img src="../imagens/logoHgconex.jpg" class="logo">
+    </div>
+
+    <nav>
+        <a href="../home.html">Home</a>
+        <a href="../produtos.html">Produtos</a>
+        <a href="#">Empresa</a>
+        <a href="#">Serviços</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <a href="https://api.whatsapp.com/send?phone=555195846137" target="_blank" class="botao-topo">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" width="18"> WhatsApp</a>
+</header>
+
+<!-- BANNER -->
+<section class="banner-interno">
+    <div class="banner-overlay">
+        <h1>Cotovelo Fêmea NPT (F) x Prensar</h1>
+        <p>Cotovelo 90º lado prensa e outro rosqueável</p>
+    </div>
+</section>
+
+<!-- PRODUTO -->
+<section class="pagina-produtos">
+    <div class="produto-individual">
+
+        <!-- IMAGEM -->
+        <div class="produto-img">
+            <img src="../imagens/cotovelo-pex1.jpg" alt="cotovelo-pex">
+        </div>
+
+        <!-- INFO -->
+        <div class="produto-info">
+            <h2>Cotovelo Fêmea NPT (F) x Prensar</h2>
+
+            <p>Cotovelo 90º p/ prensar uma ponta e a outra com rosca interna.</p>
+
+            <h3>Bitolas</h3>
+           <ul>
+                <li>16 X 1/2 NPT (F)</li>
+                <li>20 X 1/2 NPT (F)</li>
+                <li>20 X 3/4 NPT (F)</li>
+                <li>26 X 3/4 NPT (F)</li>
+                <li>26 X 1 NPT (F)</li>
+            </ul>
+
+        </div>
+
+    </div>
+</section>
+<div id="contato-area"></div>
+
+    <div id="footer"></div>
+
+<script>
+    fetch("../contato.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("contato-area").innerHTML = data;
+    });
+
+    fetch("../footer.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("footer").innerHTML = data;
+    });
+</script>
+
+</body>
+</html>

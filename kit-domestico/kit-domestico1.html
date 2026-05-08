@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kit Doméstico p/ Gás de 1kg/h Imar | HGconex</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+</head>
+<body id="topo">
+
+<div id="header"></div>
+
+<!-- BANNER -->
+<section class="banner-interno">
+    <div class="banner-overlay">
+        <h1>Kit Doméstico p/ Gás de 1kg/h Imar</h1>
+        <p>Kit para a instalação da central do gás no fogão</p>
+    </div>
+</section>
+
+<!-- PRODUTO -->
+<section class="pagina-produtos">
+    <div class="produto-individual">
+
+        <!-- IMAGEM -->
+        <div class="produto-img">
+            <img src="../imagens/kit-domestico1.jpg" alt="Kit Doméstico p/ Gás de 1kg/h Imar">
+        </div>
+
+        <!-- INFO -->
+        <div class="produto-info">
+            <h2>Kit Doméstico p/ Gás de 1kg/h Imar</h2>
+
+            <p>Kit para a instalação de 1 botijão P-13 no fogão.</p>
+            
+            <h3>Produtos:</h3>
+
+            <ul>
+                <li>1 Regulador de 1kg/h.</li>
+                <li>1 Mangueira plástica de 1,20m.</li>
+                <li>2 Abraçadeiras.</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+</section>
+<div id="contato-area"></div>
+
+    <div id="footer"></div>
+
+<script>
+    fetch("../contato.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("contato-area").innerHTML = data;
+    });
+
+    fetch("../footer.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("footer").innerHTML = data;
+    });
+
+    fetch("../header.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("header").innerHTML = data;
+    });
+</script>
+
+
+</body>
+</html>

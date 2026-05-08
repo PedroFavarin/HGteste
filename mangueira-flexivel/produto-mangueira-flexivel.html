@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mangueiras Flexível | HGconex</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+</head>
+<body id="topo">
+
+
+    <div id="header"></div>
+
+<!-- BANNER -->
+<section class="banner-interno">
+    <div class="banner-overlay">
+        <h1>Mangueiras Flexível</h1>
+        <p>Escolha o modelo ideal para sua instalação</p>
+    </div>
+</section>
+
+<!-- PRODUTOS -->
+<section class="pagina-produtos">
+    <div class="grid-produtos">
+
+        <!-- CARD 1 -->
+        <div class="card-produto">
+            <img src="../imagens/mangueira-flexivel1.jpg" alt="Mangueira Malha Aço de 1/2 Macho X Fêmea">
+            <h3>Mangueira Malha Aço de 1/2 Macho X Fêmea</h3>
+            <p>Mangueira flexível malha aço com as duas pontas rosqueável.</p>
+            <a href="mangueira-flexivel1.html" target="_self">Saiba mais</a>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="card-produto">
+            <img src="../imagens/mangueira-flexivel2-2.webp" alt="Mangueira Malha Aço Flexível Bico X Ponta Fêmea">
+            <h3>Mangueira Malha Aço Flexível Bico X Ponta Fêmea</h3>
+            <p>Mangueira flexível malha aço com uma ponta para abraçadeira e outra ponta rosqueável.</p>
+            <a href="mangueira-flexivel2.html" target="_self">Saiba mais</a>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="card-produto">
+            <img src="../imagens/mangueira-flexivel3.png" alt="Malha Aço Flexível Bico X Ponta Macho">
+            <h3>Mangueira Malha Aço Flexível Bico X Ponta Macho</h3>
+            <p>Mangueira flexível malha aço com uma ponta para abraçadeira e a outra ponta com rosca externa.</p>
+            <a href="mangueira-flexivel3.html" target="_self">Saiba mais</a>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="card-produto">
+            <img src="../imagens/mangueira-flexivel4-2.webp" alt="Mangueira Malha Aço Flexível Ponta X Ponta">
+            <h3>Mangueira Malha Aço Flexível Ponta X Ponta</h3>
+            <p>Mangueira flexível malha aço com duas pontas para abraçadeira.</p>
+            <a href="mangueira-flexivel4.html" target="_self">Saiba mais</a>
+        </div>
+
+        <!-- CARD 5 -->
+        <div class="card-produto">
+            <img src="../imagens/mangueira-flexivel5.jpg" alt="Mangueira Flexível Tomback de 1/2 Macho X Fêmea">
+            <h3>Mangueira Flexível Tomback de 1/2 Macho X Fêmea</h3>
+            <p>Mangueira flexível Tomback com terminais em latão com pontas rosqueáveis.</p>
+            <a href="mangueira-flexivel5.html" target="_self">Saiba mais</a>
+        </div>
+
+        <!-- CARD 6 -->
+        <div class="card-produto">
+            <img src="../imagens/mangueira-flexivel6.jpg" alt="Mangueira flexível de Água Alta Vazão Macho X Fêmea">
+            <h3>Mangueira Flexível de Água Alta Vazão Macho X Fêmea</h3>
+            <p>Mangueira alta vazão para água quente e fria com pontas rosqueáveis.</p>
+            <a href="mangueira-flexivel6.html" target="_self">Saiba mais</a>
+        </div>
+        
+
+    </div>
+</section>
+
+    <div id="contato-area"></div>
+
+    <div id="footer"></div>
+
+<script>
+    fetch("../contato.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("contato-area").innerHTML = data;
+    });
+
+    fetch("../footer.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("footer").innerHTML = data;
+    });
+
+     fetch("../header.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("header").innerHTML = data;
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regulador Estágio Único de 5kg/h | HGconex</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+</head>
+<body id="topo">
+
+<div id="header"></div>
+
+<!-- BANNER -->
+<section class="banner-interno">
+    <div class="banner-overlay">
+        <h1>Regulador Estágio Único de 5kg/h</h1>
+        <p>Regulador estágio único de 5kg/h</p>
+    </div>
+</section>
+
+<!-- PRODUTO -->
+<section class="pagina-produtos">
+    <div class="produto-individual">
+
+        <!-- IMAGEM -->
+        <div class="produto-img">
+            <img src="../imagens/regulador-unico-1.webp" alt="Regulador Estágio Único de 5kg/h">
+        </div>
+
+        <!-- INFO -->
+        <div class="produto-info">
+            <h2>Regulador Estágio Único de 5kg/h</h2>
+
+            <p>Entrada com rosca interna de 1/8 e saída com rosca interna de 3/8.</p>
+
+            <h3>Pressão</h3>
+            <ul>
+                <li>Pressão de entrada: 1,5kg a 7kg</li>
+                <li>Pressão de saída: 2,8 kpa ou 280 mmca</li>
+            </ul>
+
+        </div>
+
+    </div>
+</section>
+<div id="contato-area"></div>
+
+    <div id="footer"></div>
+
+<script>
+    fetch("../contato.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("contato-area").innerHTML = data;
+    });
+
+    fetch("../footer.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("footer").innerHTML = data;
+    });
+
+    fetch("../header.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("header").innerHTML = data;
+    });
+</script>
+
+
+</body>
+</html>

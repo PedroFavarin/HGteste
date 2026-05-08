@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regulador Pressão 2° Estágio | HGconex</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+</head>
+<body id="topo">
+
+
+    <div id="header"></div>
+
+<!-- BANNER -->
+<section class="banner-interno">
+    <div class="banner-overlay">
+        <h1>Regulador Pressão 2° Estágio</h1>
+        <p>Maior precisão e estabilidade no fornecimento</p>
+    </div>
+</section>
+
+<!-- PRODUTOS -->
+<section class="pagina-produtos">
+    <div class="grid-produtos">
+
+        <!-- CARD 1 -->
+        <div class="card-produto">
+            <img src="../imagens/regulador-pressao-2.jpg" alt="Regulador 2° Estágio de 1kg/h">
+            <h3>Regulador 2° Estágio de 1kg/h</h3>
+            <p>Regulador de 1kg/h para central do gás com 1 botijão P-13.</p>
+            <a href="regulador1.html" target="_self">Saiba mais</a>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="card-produto">
+            <img src="../imagens/regulador-pressao-2-2.jpg" alt="Regulador 2° Estágio de 2kg/h">
+            <h3>Regulador 2° Estágio de 2kg/h</h3>
+            <p>Regulador de 2kg/h para 1 botijão P-13.</p>
+            <a href="regulador2.html" target="_self">Saiba mais</a>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="card-produto">
+            <img src="../imagens/regulador-pressao-2-3.webp" alt="Regulador 2° Estágio de 5kg/h">
+            <h3>Regulador 2° Estágio de 5kg/h</h3>
+            <p>Regulador 2° estágio de 5kg/h.</p>
+            <a href="regulador3.html" target="_self">Saiba mais</a>
+        </div>
+
+         <!-- CARD 4 -->
+        <div class="card-produto">
+            <img src="../imagens/regulador-pressao-2-4.webp" alt="Regulador 2° Estágio de 12kg/h">
+            <h3>Regulador 2° Estágio de 12kg/h</h3>
+            <p>Regulador 2° estágio de 12kg/h.</p>
+            <a href="regulador4.html" target="_self">Saiba mais</a>
+        </div>
+
+    </div>
+</section>
+
+    <div id="contato-area"></div>
+
+    <div id="footer"></div>
+
+<script>
+    fetch("../contato.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("contato-area").innerHTML = data;
+    });
+
+    fetch("../footer.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("footer").innerHTML = data;
+    });
+
+     fetch("../header.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("header").innerHTML = data;
+    });
+</script>
+
+</body>
+</html>

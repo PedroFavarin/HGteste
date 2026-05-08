@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Válvula Cromada Angular Macho (M) X Bico (BM) | HGconex</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+</head>
+<body id="topo">
+
+<div id="header"></div>
+
+<!-- BANNER -->
+<section class="banner-interno">
+    <div class="banner-overlay">
+        <h1>Válvula Cromada Angular Macho (M) X Bico (BM)</h1>
+        <p>Válvula cromada angular abre e fecha com saída bico</p>
+    </div>
+</section>
+
+<!-- PRODUTO -->
+<section class="pagina-produtos">
+    <div class="produto-individual">
+
+        <!-- IMAGEM -->
+        <div class="produto-img">
+            <img src="../imagens/valvula4.jpg" alt="Válvula Cromada Angular Macho (M) X Bico (BM)">
+        </div>
+
+        <!-- INFO -->
+        <div class="produto-info">
+            <h2>Válvula Cromada Angular Macho (M) X Bico (BM)</h2>
+
+            <p>Válvula abre e fecha cromada com rosca externa e saáda bico para mangueira.</p>
+
+            <h3>Bitolas</h3>
+            <ul>
+                <li>1/2 Macho (M) X Bico</li>
+            </ul>
+
+        </div>
+
+    </div>
+</section>
+<div id="contato-area"></div>
+
+    <div id="footer"></div>
+
+<script>
+    fetch("../contato.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("contato-area").innerHTML = data;
+    });
+
+    fetch("../footer.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("footer").innerHTML = data;
+    });
+
+    fetch("../header.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("header").innerHTML = data;
+    });
+</script>
+
+
+</body>
+</html>
