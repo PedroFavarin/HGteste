@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pig Tail P-13 1/8 NPT (F) X 1/8 NPT (M) | HGconex</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+</head>
+<body id="topo">
+
+
+    <div id="header"></div>
+
+<!-- BANNER -->
+<section class="banner-interno">
+    <div class="banner-overlay">
+        <h1>Pig Tail P-13 1/8 NPT (F) X 1/8 NPT (M)</h1>
+        <p>Mangote para central P-13</p>
+    </div>
+</section>
+
+<!-- PRODUTO -->
+<section class="pagina-produtos">
+    <div class="produto-individual">
+
+        <!-- IMAGEM -->
+        <div class="produto-img">
+            <img src="../imagens/mangote2.jpg" alt="Pig Tail P-13 1/8 NPT (F) X 1/8 NPT (M)">
+        </div>
+
+        <!-- INFO -->
+        <div class="produto-info">
+            <h2>Pig Tail P-13 1/8 NPT (F) X 1/8 NPT (M)</h2>
+
+            <p>Mangote para a central do gás P-13 com rosca 1/8 Macho (M) para 1/8 Fêmea (F).</p>
+
+            <h3>Tamanhos</h3>
+           <ul>
+                <li>50cm</li>
+                <li>1 Metro</li>
+            </ul>
+
+        </div>
+
+    </div>
+</section>
+<div id="contato-area"></div>
+
+    <div id="footer"></div>
+
+<script>
+    fetch("../contato.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("contato-area").innerHTML = data;
+    });
+
+    fetch("../footer.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("footer").innerHTML = data;
+    });
+
+    fetch("../header.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("header").innerHTML = data;
+    });
+</script>
+
+
+</body>
+</html>

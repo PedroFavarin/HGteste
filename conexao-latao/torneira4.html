@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torneira Zamak 1/8 Fêmea (F) X 1/8 Fêmea (F) | HGconex</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+</head>
+<body id="topo">
+
+
+    <div id="header"></div>
+
+<!-- BANNER -->
+<section class="banner-interno">
+    <div class="banner-overlay">
+        <h1>Torneira Zamak 1/8 Fêmea (F) X 1/8 Fêmea (F)</h1>
+        <p>Torneira Zamak com manopla de plástico</p>
+    </div>
+</section>
+
+<!-- PRODUTO -->
+<section class="pagina-produtos">
+    <div class="produto-individual">
+
+        <!-- IMAGEM -->
+        <div class="produto-img">
+            <img src="../imagens/torneira4.jpg" alt="Torneira Zamak 1/8 Fêmea (F) X 1/8 Fêmea (F)">
+        </div>
+
+        <!-- INFO -->
+        <div class="produto-info">
+            <h2>Torneira Zamak 1/8 Fêmea (F) X 1/8 Fêmea (F)</h2>
+
+            <p>
+                Torneira Zamak com manopla de plástico, duas saidas com rosca interna.
+            </p>
+
+        </div>
+
+    </div>
+</section>
+<div id="contato-area"></div>
+
+    <div id="footer"></div>
+
+<script>
+    fetch("../contato.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("contato-area").innerHTML = data;
+    });
+
+    fetch("../footer.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("footer").innerHTML = data;
+    });
+
+    fetch("../header.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("header").innerHTML = data;
+    });
+</script>
+
+</body>
+</html>

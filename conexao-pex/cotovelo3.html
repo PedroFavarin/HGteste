@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotovelo p/ Gás Prensar | HGconex</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+</head>
+<body id="topo">
+
+<!-- HEADER -->
+<header class="topo">
+    <div class="logo-area">
+        <img src="../imagens/logoHgconex.jpg" class="logo">
+    </div>
+
+    <nav>
+        <a href="../home.html">Home</a>
+        <a href="../produtos.html">Produtos</a>
+        <a href="#">Empresa</a>
+        <a href="#">Serviços</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <a href="https://api.whatsapp.com/send?phone=555195846137" target="_blank" class="botao-topo">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" width="18"> WhatsApp</a>
+</header>
+
+<!-- BANNER -->
+<section class="banner-interno">
+    <div class="banner-overlay">
+        <h1>Cotovelo p/ gás Prensar</h1>
+        <p>Cotovelo 90º dois lados prensa</p>
+    </div>
+</section>
+
+<!-- PRODUTO -->
+<section class="pagina-produtos">
+    <div class="produto-individual">
+
+        <!-- IMAGEM -->
+        <div class="produto-img">
+            <img src="../imagens/cotovelo-pex3.png">
+        </div>
+
+        <!-- INFO -->
+        <div class="produto-info">
+            <h2>Cotovelo p/ gás Prensar.</h2>
+
+            <p>Cotovelo p/gás com os dois lados de prensar.</p>
+
+            <h3>Bitolas</h3>
+           <ul>
+                <li>16 X 16</li>
+                <li>20 X 20</li>
+                <li>26 X 26</li>
+            </ul>
+
+        </div>
+
+    </div>
+</section>
+<div id="contato-area"></div>
+
+    <div id="footer"></div>
+
+<script>
+    fetch("../contato.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("contato-area").innerHTML = data;
+    });
+
+    fetch("../footer.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("footer").innerHTML = data;
+    });
+</script>
+
+</body>
+</html>

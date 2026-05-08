@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Te de latão NPT (F) X NPT (M) X NPT (F) | HGconex</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+</head>
+<body id="topo">
+
+
+    <div id="header"></div>
+
+<!-- BANNER -->
+<section class="banner-interno">
+    <div class="banner-overlay">
+        <h1>Tê de Latão NPT (F) X NPT (M) X NPT (F)</h1>
+        <p>Tê de latão com todas as pontas rosqueáveis</p>
+    </div>
+</section>
+
+<!-- PRODUTO -->
+<section class="pagina-produtos">
+    <div class="produto-individual">
+
+        <!-- IMAGEM -->
+        <div class="produto-img">
+            <img src="../imagens/te1.jpg" alt="Tê de Latão NPT (F) X NPT (M) X NPT (F)">
+        </div>
+
+        <!-- INFO -->
+        <div class="produto-info">
+            <h2>Tê de Latão NPT (F) X NPT (M) X NPT (F)</h2>
+
+            <p>
+                Tê em latão com rosca interna X rosca externa X rosca interna.
+            </p>
+
+            <h3>Bitolas</h3>
+           <ul>
+                <li>1/2 NPT X 1/2 NPT X 1/2 NPT</li>
+                <li>1/8 NPT X 1/8 NPT X 1/8 NPT</li>
+                <li>7/16 NPT X 1/8 NPT X 7/16 NPT </li>
+            </ul>
+
+        </div>
+
+    </div>
+</section>
+
+    <div id="contato-area"></div>
+
+    <div id="footer"></div>
+
+<script>
+    fetch("../contato.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("contato-area").innerHTML = data;
+    });
+
+    fetch("../footer.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("footer").innerHTML = data;
+    });
+
+    fetch("../header.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("header").innerHTML = data;
+    });
+</script>
+
+
+</body>
+</html>

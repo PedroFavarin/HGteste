@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tubo de Aço | HGconex</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+</head>
+<body id="topo">
+
+<div id="header"></div>
+
+<!-- BANNER -->
+<section class="banner-interno">
+    <div class="banner-overlay">
+        <h1>Tubo de Aço</h1>
+        <p>Tubo de aço</p>
+    </div>
+</section>
+
+<!-- PRODUTO -->
+<section class="pagina-produtos">
+    <div class="produto-individual">
+
+        <!-- IMAGEM -->
+        <div class="produto-img">
+            <img src="../imagens/tubo-pex-galvanizado.jpg" alt="Tubo de Aço">
+        </div>
+
+        <!-- INFO -->
+        <div class="produto-info">
+            <h2>Tubo de Aço</h2>
+
+            <p>Os tubos são utilizados para condução de fluídos não corrosivos, como o gás e a água com requisitos de qualidade.</p>
+
+            <p> Podem ser fornecidos com acabamento preto, galvanizado, pintado e com as extremidades lisas, biseladas, ranhuradas, ou com rosca em diversos diâmetros e espessuras. NBR 5580, NBR 5590.</p>
+
+            <h3>Tamanhos</h3>
+            <ul>
+                <li>1/2 galvanizado e preto</li>
+                <li>3/4 galvanizado e preto</li>
+                <li>1 galvanizado e preto</li>
+                <li>2.1/2 galvanizado</li>
+            </ul>
+
+        </div>
+
+    </div>
+</section>
+<div id="contato-area"></div>
+
+    <div id="footer"></div>
+
+<script>
+    fetch("../contato.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("contato-area").innerHTML = data;
+    });
+
+    fetch("../footer.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("footer").innerHTML = data;
+    });
+
+    fetch("../header.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("header").innerHTML = data;
+    });
+</script>
+
+
+</body>
+</html>

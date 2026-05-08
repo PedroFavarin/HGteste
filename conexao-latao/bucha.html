@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bucha de Redução Latão NPT (M) X NPT (F) | HGconex</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+</head>
+<body id="topo">
+
+
+    <div id="header"></div>
+
+<!-- BANNER -->
+<section class="banner-interno">
+    <div class="banner-overlay">
+        <h1>Bucha de Redução Latão NPT (M) X NPT (F)</h1>
+        <p>Bucha de redução de bitolas maiores em menores</p>
+    </div>
+</section>
+
+<!-- PRODUTO -->
+<section class="pagina-produtos">
+    <div class="produto-individual">
+
+        <!-- IMAGEM -->
+        <div class="produto-img">
+            <img src="../imagens/BUCHAREDLATAO.jpg" alt="Bucha de Redução Latão NPT (M) X NPT (F)">
+        </div>
+
+        <!-- INFO -->
+        <div class="produto-info">
+            <h2>Bucha de Redução Latão NPT (M) X NPT (F)</h2>
+
+            <p>
+                Bucha de reducão em latão para reduzir bitolas maiores para menores, com lado rosca externa e outro lado rosca interna.
+            </p>
+
+            <h3>Bitolas</h3>
+           <ul>
+                <li>1/2 NPT (M) x 7/16 NPT (F)</li>
+                <li>1/2 NPT (M) x 1/8 NPT (F)</li>
+                <li>1/2 NPT (M) x 1/4 NPT (F)</li>
+                <li>1/2 NPT (M) x 3/8 NPT (F)</li>
+                <li>1/4 NPT (M) x 7/16 NPT (F)</li>
+                <li>1/4 NPT (M) x 1/8 NPT (F)</li>
+                <li>1/8 NPT (M) x 7/16 NPT (F)</li>
+                <li>3/4 NPT (M) x 1/2 NPT (F)</li>
+                <li>3/8 NPT (M) x 1/4 NPT (F)</li>
+                <li>3/8 NPT (M) x 1/8 NPT (F)</li>
+            </ul>
+
+        </div>
+
+    </div>
+</section>
+<div id="contato-area"></div>
+
+    <div id="footer"></div>
+
+<script>
+    fetch("../contato.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("contato-area").innerHTML = data;
+    });
+
+    fetch("../footer.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("footer").innerHTML = data;
+    });
+
+     fetch("../header.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("header").innerHTML = data;
+    });
+</script>
+
+
+</body>
+</html>

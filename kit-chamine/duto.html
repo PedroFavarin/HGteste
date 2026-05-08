@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duto Corrugado Flexível em Alumínio | HGconex</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+</head>
+<body id="topo">
+
+<div id="header"></div>
+
+<!-- BANNER -->
+<section class="banner-interno">
+    <div class="banner-overlay">
+        <h1>Duto Corrugado Flexível em Alumínio</h1>
+        <p>Duto corrugado para aquecedor e coifas.</p>
+    </div>
+</section>
+
+<!-- PRODUTO -->
+<section class="pagina-produtos">
+    <div class="produto-individual">
+
+        <!-- IMAGEM -->
+        <div class="produto-img">
+            <img src="../imagens/duto.w_600.h_600.jpg" alt="Duto Corrugado Flecível em Alumínio">
+        </div>
+
+        <!-- INFO -->
+        <div class="produto-info">
+            <h2>Duto Corrugado p/ Aquecedor e Coifas</h2>
+
+            <p>Duto fabricado 100% em alumínio. Sua forma corrugada permite que o produto faça curvas, tornando-o um duto semi-rígido.</p>
+            
+            <p>É um material incombustível, resistente à combustão e suporta temperaturas de até 240°. Atende a NBR 13103 para instalação de aquecedores a gás. Alcança até 1 metro e 50 cm.</p>
+
+            <h3>Tamanhos</h3>
+            <ul>
+                <li>60</li>
+                <li>80</li>
+                <li>100</li>
+            </ul>
+
+        </div>
+
+    </div>
+</section>
+<div id="contato-area"></div>
+
+    <div id="footer"></div>
+
+<script>
+    fetch("../contato.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("contato-area").innerHTML = data;
+    });
+
+    fetch("../footer.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("footer").innerHTML = data;
+    });
+
+    fetch("../header.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("header").innerHTML = data;
+    });
+</script>
+
+
+</body>
+</html>

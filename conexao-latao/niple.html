@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niple de Latão NPT (M) X NPT (M) | HGconex</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+</head>
+<body id="topo">
+
+
+    <div id="header"></div>
+
+<!-- BANNER -->
+<section class="banner-interno">
+    <div class="banner-overlay">
+        <h1>Niple de Latão NPT (M) X NPT (M)</h1>
+        <p>Conexão de latão com as duas pontas rsoqueaveis</p>
+    </div>
+</section>
+
+<!-- PRODUTO -->
+<section class="pagina-produtos">
+    <div class="produto-individual">
+
+        <!-- IMAGEM -->
+        <div class="produto-img">
+            <img src="../imagens/niple.jpg" alt="Niple de Latão NPT (M) X NPT (M)">
+        </div>
+
+        <!-- INFO -->
+        <div class="produto-info">
+            <h2>Niple de Latão NPT (M) X NPT (M)</h2>
+
+            <p>
+                Conexão em latão com as duas pontas externas NPT rosqueável.
+            </p>
+
+            <h3>Bitolas</h3>
+            <ul>
+                <li>1 NPT X 1 NPT</li>
+                <li>1/2 NPT X 1/2 NPT</li>
+                <li>1/8 NPT X 1/8 NPT</li>
+                <li>3/8 NPT X 3/8 NPT</li>
+            </ul>
+
+        </div>
+
+    </div>
+</section>
+<div id="contato-area"></div>
+
+    <div id="footer"></div>
+
+<script>
+    fetch("../contato.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("contato-area").innerHTML = data;
+    });
+
+    fetch("../footer.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("footer").innerHTML = data;
+    });
+</script>
+
+
+</body>
+</html>

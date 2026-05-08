@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regulador 2° Estágio de 1kg/h | HGconex</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+</head>
+<body id="topo">
+
+<div id="header"></div>
+
+<!-- BANNER -->
+<section class="banner-interno">
+    <div class="banner-overlay">
+        <h1>Regulador 2° Estágio de 1kg/h</h1>
+        <p>Regulador de 1kg/h para central do gás com 1 botijão P-13</p>
+    </div>
+</section>
+
+<!-- PRODUTO -->
+<section class="pagina-produtos">
+    <div class="produto-individual">
+
+        <!-- IMAGEM -->
+        <div class="produto-img">
+            <img src="../imagens/regulador-pressao-2.jpg" alt="Regulador 2° Estágio de 1kg/h">
+        </div>
+
+        <!-- INFO -->
+        <div class="produto-info">
+            <h2>Regulador 2° Estágio de 1kg/h</h2>
+
+            <p>Os reguladores para uso doméstico com vazão de 1kg/h, são indicados para utilização de um botijão P-13 predial e doméstico, em instalações com mangueira de plástico ou flexível, regulador com saída de bico.</p>
+
+            <h3>Pressão</h3>
+            <ul>
+                <li>Pressão de entrada: 0kg a 7kg</li>
+                <li>Pressão de saída: 2,8 KPA ou 280 MMCA </li>
+            </ul>
+
+        </div>
+
+    </div>
+</section>
+<div id="contato-area"></div>
+
+    <div id="footer"></div>
+
+<script>
+    fetch("../contato.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("contato-area").innerHTML = data;
+    });
+
+    fetch("../footer.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("footer").innerHTML = data;
+    });
+
+    fetch("../header.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("header").innerHTML = data;
+    });
+</script>
+
+
+</body>
+</html>

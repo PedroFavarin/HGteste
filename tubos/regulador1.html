@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tubo Pex Multicamada Amarelo | HGconex</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+</head>
+<body id="topo">
+
+<div id="header"></div>
+
+<!-- BANNER -->
+<section class="banner-interno">
+    <div class="banner-overlay">
+        <h1>Tubo Pex Multicamada Amarelo</h1>
+        <p>Tubo usado para instalações internas onde não se pega sol</p>
+    </div>
+</section>
+
+<!-- PRODUTO -->
+<section class="pagina-produtos">
+    <div class="produto-individual">
+
+        <!-- IMAGEM -->
+        <div class="produto-img">
+            <img src="../imagens/tubo-pex-amarelo.png" alt="Tubo Pex Multicamada Amarelo">
+        </div>
+
+        <!-- INFO -->
+        <div class="produto-info">
+            <h2>Tubo Pex Multicamada Amarelo</h2>
+
+            <p>O tubo multicamada para gás apresenta alta resistência devido a suas multicamadas internas e externas feitas em polietileno, alumínio e polietileno de alta densidade. Cada uma dessas camadas é sobreposta de maneira milimetricamente adequada por processos tecnológicos de alta performance que realizam uma junção fixa e altamente durável.</p>
+
+            <h3>Tamanhos</h3>
+            <ul>
+                <li>16mm</li>
+                <li>20mm</li>
+                <li>26mm</li>
+            </ul>
+
+        </div>
+
+    </div>
+</section>
+<div id="contato-area"></div>
+
+    <div id="footer"></div>
+
+<script>
+    fetch("../contato.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("contato-area").innerHTML = data;
+    });
+
+    fetch("../footer.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("footer").innerHTML = data;
+    });
+
+    fetch("../header.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("header").innerHTML = data;
+    });
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mangueira Malha Aço Flexível Bico X Ponta Macho | HGconex</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+</head>
+<body id="topo">
+
+<div id="header"></div>
+
+<!-- BANNER -->
+<section class="banner-interno">
+    <div class="banner-overlay">
+        <h1>Mangueira Malha Aço Flexível Bico X Ponta Macho</h1>
+        <p>Mangueira flexível malha aço com uma ponta para abraçadeira e a outra ponta com rosca externa</p>
+    </div>
+</section>
+
+<!-- PRODUTO -->
+<section class="pagina-produtos">
+    <div class="produto-individual">
+
+        <!-- IMAGEM -->
+        <div class="produto-img">
+            <img src="../imagens/mangueira-flexivel3.png" alt="Mangueira Malha Aço Flexível Bico X Ponta Macho">
+        </div>
+
+        <!-- INFO -->
+        <div class="produto-info">
+            <h2>Mangueira Malha Aço Flexível Bico X Ponta Macho</h2>
+
+            <p>Mangueira flexivel nitrílica com revestimento em malha aço com uma ponta para colocar abraçadeira e outra ponta com rosca externa de 1/2 polegada - NBR13419.</p>
+
+            <h3>Tamanhos</h3>
+            <ul>
+                <li>1 Metro</li>
+                <li>1 Metro e 20cm</li>
+                <li>1 Metro e 50cm</li>
+                <li>2 Metros</li>
+            </ul>
+
+        </div>
+
+    </div>
+</section>
+<div id="contato-area"></div>
+
+    <div id="footer"></div>
+
+<script>
+    fetch("../contato.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("contato-area").innerHTML = data;
+    });
+
+    fetch("../footer.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("footer").innerHTML = data;
+    });
+
+    fetch("../header.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("header").innerHTML = data;
+    });
+</script>
+
+
+</body>
+</html>

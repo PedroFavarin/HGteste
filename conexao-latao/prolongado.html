@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prolongador Latão NPT (M) X NPT (F) | HGconex</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+</head>
+<body id="topo">
+
+<div id="header"></div>
+
+<!-- BANNER -->
+<section class="banner-interno">
+    <div class="banner-overlay">
+        <h1>Prolongador Latão NPT (M) X NPT (F)</h1>
+        <p>Conexão prolongadora</p>
+    </div>
+</section>
+
+<!-- PRODUTO -->
+<section class="pagina-produtos">
+    <div class="produto-individual">
+
+        <!-- IMAGEM -->
+        <div class="produto-img">
+            <img src="../imagens/prolongado.jpg" alt="Prolongador Latão NPT (M) X NPT (F)">
+        </div>
+
+        <!-- INFO -->
+        <div class="produto-info">
+            <h2>Prolongador Latão NPT (M) X NPT (F)</h2>
+
+            <p>
+                Conexão em latão utilizada para prolongar algum ponto.
+            </p>
+
+            <h3>Tamanhos</h3>
+           <ul>
+                <li>CURTO - 2,5cm</li>
+                <li>MEDIO - 4cm</li>
+                <li>LONGO - 5cm</li>
+            </ul>
+
+            <h3>Bitolas</h3>
+                <ul>
+                    <li>1/2 NPT (M) X 1/2 NPT (F)</li>
+                    <li>3/4 NPT (M) X 3/4 NPT (F)</li>
+                </ul>
+
+        </div>
+
+    </div>
+</section>
+<div id="contato-area"></div>
+
+    <div id="footer"></div>
+
+<script>
+    fetch("../contato.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("contato-area").innerHTML = data;
+    });
+
+    fetch("../footer.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("footer").innerHTML = data;
+    });
+
+    fetch("../header.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("header").innerHTML = data;
+    });
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Válvula Cromada Macho (M) X Fêmea (F) Reta | HGconex</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+</head>
+<body id="topo">
+
+<div id="header"></div>
+
+<!-- BANNER -->
+<section class="banner-interno">
+    <div class="banner-overlay">
+        <h1>Válvula Cromada Macho (M) X Fêmea (F) Reta</h1>
+        <p>Válvula cromada abre e fecha rosqueável borboleta</p>
+    </div>
+</section>
+
+<!-- PRODUTO -->
+<section class="pagina-produtos">
+    <div class="produto-individual">
+
+        <!-- IMAGEM -->
+        <div class="produto-img">
+            <img src="../imagens/valvula1.jpg" alt="Válvula Cromada Macho (M) X Fêmea (F) Reta">
+        </div>
+
+        <!-- INFO -->
+        <div class="produto-info">
+            <h2>Válvula Cromada Macho (M) X Fêmea (F) Reta</h2>
+
+            <p>Válvula abre e fecha com rosca externa e interna com manopla borboleta.</p>
+
+            <h3>Bitolas</h3>
+            <ul>
+                <li>1/2 Macho (M) X 1/2 Fêmea (F)</li>
+                <li>3/4 Macho (M) X 3/4 Fêmea (F)</li>
+                <li>1 Macho (M) X 1 Fêmea (F)</li>
+            </ul>
+
+        </div>
+
+    </div>
+</section>
+<div id="contato-area"></div>
+
+    <div id="footer"></div>
+
+<script>
+    fetch("../contato.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("contato-area").innerHTML = data;
+    });
+
+    fetch("../footer.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("footer").innerHTML = data;
+    });
+
+    fetch("../header.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("header").innerHTML = data;
+    });
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abraçadeira p/ Aquecedor | HGconex</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+</head>
+<body id="topo">
+
+<div id="header"></div>
+
+<!-- BANNER -->
+<section class="banner-interno">
+    <div class="banner-overlay">
+        <h1>Abraçadeira p/ Aquecedor</h1>
+        <p>Abraçadeira para o duto do aquecedor.</p>
+    </div>
+</section>
+
+<!-- PRODUTO -->
+<section class="pagina-produtos">
+    <div class="produto-individual">
+
+        <!-- IMAGEM -->
+        <div class="produto-img">
+            <img src="../imagens/abracadeiraroscasfim.jpg" alt="abraçadeira de chaminé">
+        </div>
+
+        <!-- INFO -->
+        <div class="produto-info">
+            <h2>Abraçadeira p/ Aquecedor</h2>
+
+            <p>Fabricada em aço carbono galvanizado, modelo rosca sem fim. É utilizada para dar firmeza e evitar vazamentos nas conexões dos dutos flexíveis com equipamentos e acessórios. É de fácil utilização, com regulagem do aperto através de parafuso.</p>
+
+            <h3>Tamanhos</h3>
+            <ul>
+                <li>60</li>
+                <li>80</li>
+                <li>100</li>
+            </ul>
+
+        </div>
+
+    </div>
+</section>
+<div id="contato-area"></div>
+
+    <div id="footer"></div>
+
+<script>
+    fetch("../contato.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("contato-area").innerHTML = data;
+    });
+
+    fetch("../footer.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("footer").innerHTML = data;
+    });
+
+    fetch("../header.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("header").innerHTML = data;
+    });
+</script>
+
+
+</body>
+</html>
